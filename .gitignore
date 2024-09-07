@@ -131,6 +131,8 @@ env.bak/
 venv.bak/
 rag_env/
 
+
+research/user_data/
 # Spyder project settings
 .spyderproject
 .spyproject
