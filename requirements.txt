@@ -1,0 +1,10 @@
+pypdf
+langchain
+langchain-community 
+langchain-core
+chromadb 
+pytest
+jupyter
+langchain-groq===0.1.9
+streamlit
+streamlit-pdf-viewer
