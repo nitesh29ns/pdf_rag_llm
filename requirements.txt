@@ -8,3 +8,4 @@ jupyter
 langchain-groq===0.1.9
 streamlit
 streamlit-pdf-viewer
+streamlit-pdf-reader
