@@ -48,27 +48,28 @@ def main():
 
         pdf_file = st.file_uploader("upload PDF file", type="pdf")
         
-
-        if pdf_file:
-            #pdf_reader(pdf_file)
+        with st.spinner("pdf to vector..."):
+            if pdf_file:
+                #pdf_reader(pdf_file)
+                
+                dir = "uploaded_pdfs"
+                os.makedirs(dir,exist_ok=True)
+                
+                path = os.path.join(dir, pdf_file.name)
             
-            dir = "uploaded_pdfs"
-            os.makedirs(dir,exist_ok=True)
-            
-            path = os.path.join(dir, pdf_file.name)
-           
-            with open(path, "wb") as f:
-                    f.write(pdf_file.getvalue())
+                with open(path, "wb") as f:
+                        f.write(pdf_file.getvalue())
 
-            chroma_db_name = f"{pdf_file.name}_db"
-            #print(chroma_db_name)
-            if os.path.isdir(chroma_db_name):
-                st.write("db is already exist.")
-            else:
-                db = vectordb(pdf_path=path, chroma_path=chroma_db_name)
-                res = db.upload_to_vectordb()
+                chroma_db_name = f"{pdf_file.name}_db"
+                #print(chroma_db_name)
+                if os.path.isdir(chroma_db_name):
+                    st.write("db is already exist.")
+                else:
+                    db = vectordb(pdf_path=path, chroma_path=chroma_db_name)
+                    res = db.upload_to_vectordb()
 
-                st.write(res)
+                    st.write(res)
+                st.success("Done! ✅")
 
             
         query = st.text_input("query",placeholder="ask me.",)

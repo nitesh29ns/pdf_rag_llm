@@ -54,8 +54,8 @@ class generate_output():
 
         response_text = llm.invoke(prompt)
 
-        sources = [doc.metadata.get('id', None) for doc, _score in Results]
-        formatted_response = f"Response: {response_text.content}\nScource: {sources}"
-        print(formatted_response)
+        #sources = [doc.metadata.get('id', None) for doc, _score in Results]
+        #formatted_response = f"Response: {response_text.content}\nScource: {sources}"
+        #print(formatted_response)
         
         return response_text.content
