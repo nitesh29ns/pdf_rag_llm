@@ -16,7 +16,7 @@ def main():
         st.write("""
             My Name is Nitesh Sharma and This is my Intership project under ineuron Intership.
             ***
-            github :- https://github.com/nitesh29ns/
+            github :- https://github.com/nitesh29ns/pdf_rag_llm
                 
             linkdin :- https://www.linkedin.com/in/nitesh-sharma-0a260b183/
             """)
