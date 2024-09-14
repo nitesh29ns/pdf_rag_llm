@@ -132,7 +132,12 @@ venv.bak/
 rag_env/
 
 
-research/user_data/
+
+research/user_data/*
+research/api_key.txt/*
+constent.yaml
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
