@@ -40,6 +40,8 @@ def main():
 
         pdf_file = st.file_uploader("upload PDF file", type="pdf")
 
+        print(pdf_file)
+
         with st.expander("view pdf"):
             if pdf_file:
                 binary_data = pdf_file.getvalue()
