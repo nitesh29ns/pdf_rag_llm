@@ -14,7 +14,7 @@ def main():
     with st.sidebar:
         st.header("About")
         st.write("""
-            My Name is Nitesh Sharma and This is my Intership project under ineuron Intership.
+            My Name is Nitesh Sharma. I am using llama-3.1-70b-versatile model.
             ***
             github :- https://github.com/nitesh29ns/pdf_rag_llm
                 
@@ -37,7 +37,7 @@ def main():
 
         html_write_temp="""
         <div>
-        <h1 style="font-size: 25px"> You have to upload an pdf and any thing with in the context of this pdf.</h1>
+        <h1 style="font-size: 25px"> You have to upload an pdf and ask anything with in the context of the pdf.</h1>
         </div>
 
         """
