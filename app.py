@@ -6,7 +6,6 @@ from llm_output import generate_output
 
 
 
-
 def main():
     
     st.set_page_config(layout="wide")
@@ -37,7 +36,7 @@ def main():
 
         html_write_temp="""
         <div>
-        <h1 style="font-size: 25px"> You have to upload an pdf and ask anything with in the context of the pdf.</h1>
+        <h1 style="font-size: 25px">You have to upload an pdf and ask anything with in the context of the pdf.</h1>
         </div>
 
         """
@@ -94,3 +93,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

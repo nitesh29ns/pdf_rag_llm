@@ -1,11 +1,11 @@
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.ollama import Ollama
 from research.embedding_funcation import get_embedding_funcation
 from langchain_groq import ChatGroq
 import yaml
 
-with open(".\constent.yaml") as f:
+with open(r"./constent.yaml") as f:
     con = yaml.safe_load(f)
 
 
