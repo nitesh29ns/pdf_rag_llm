@@ -1,9 +1,15 @@
 from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
-from langchain_community.llms.ollama import Ollama
-from research.embedding_funcation import get_embedding_funcation
 from langchain_groq import ChatGroq
+#from langchain_community.llms.ollama import Ollama
+from research.embedding_funcation import get_embedding_funcation
+#from research.embedding_funcation import SentenceTransformerEmbeddings
 import yaml
+
+
+#model_name = "nomic-ai/nomic-embed-text-v1"
+#embedding = SentenceTransformerEmbeddings(model_name)
+
 
 with open(r"./constent.yaml") as f:
     con = yaml.safe_load(f)

@@ -4,9 +4,12 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from research.embedding_funcation import get_embedding_funcation
+#from research.embedding_funcation import SentenceTransformerEmbeddings
 from langchain_community.vectorstores import Chroma
 from uuid import uuid4
 
+#model_name = "nomic-ai/nomic-embed-text-v1"
+#embedding = SentenceTransformerEmbeddings(model_name)
 
 class vectordb:
 

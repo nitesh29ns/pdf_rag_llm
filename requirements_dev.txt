@@ -1,9 +1,17 @@
+pypdf
 langchain
 langchain-community 
 langchain-core
 langchain-chroma
 pysqlite-binary
+pytest
+jupyter
 langchain-groq
 streamlit
+streamlit-pdf-viewer
 streamlit-pdf-reader
+
 langchain-nomic
+#langchain-huggingface
+#sentence-transformers
+#einops
